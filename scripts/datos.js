@@ -1,142 +1,93 @@
+equipos = {equipo1:'MOLE4EVER',equipo2:'HALCONES DE NUEVO LAREDO'}
 rondas = [
   {
     /***** RONDA 1 *****/
-
     preguntas: [
-      {
-        nombre: 'Menciona el día más festejado en méxico',
-        respuestas: [
-          {nombre: 'Día de las madres', numero: 39},
-          {nombre: 'Día de la Virgen de Guadalupe', numero: 25},
-          {nombre: 'Día de muertos', numero: 18},
-          {nombre: 'Día de la independencia', numero: 10},
-          {nombre: 'Día del niño', numero: 8}
-        ]
-      },
-      {
-        nombre: 'Parte del cuerpo en donde los dolores son más frecuentes',
-        respuestas: [
-          {nombre: 'Cabeza', numero: 27},
-          {nombre: 'Estomago/vientre', numero: 25},
-          {nombre: 'Espalda', numero: 22},
-          {nombre: 'Piernas', numero: 19}
-        ]
-      },      
-      {
-        nombre: 'Menciona algo que se le puede hacer al piso',
-        respuestas: [
-          {nombre: 'Trapearlo', numero: 32},
-          {nombre: 'Barrerlo', numero: 29},
-          {nombre: 'Pulirlo', numero: 13},
-          {nombre: 'Pisarlo', numero: 7}         
-        ]
-      }      
-    ] 
+      { 
+          nombre: 'NOMBRE DE UN PLATILLO MEXICANO', 
+          respuestas: [ 
+             { nombre: 'Pozole', numero: 38}, 
+             {nombre: 'Tacos', numero: 19}, 
+             {nombre:  'Mole', numero: 16}, 
+             {nombre:  'Enchiladas ', numero: 13}, 
+             {nombre:  'Tamales', numero: 8}
+              ]
+            },
+      { 
+          nombre: 'MENCIONA UN ALIMENTO QUE COMÚNMENTE DESAYUNA UN ESTUDIANTE.', 
+          respuestas: [ 
+             { nombre: 'Café', numero: 33}, 
+             {nombre: 'Torta', numero: 21}, 
+             {nombre:  'Sándwich', numero: 15}, 
+             {nombre:  'Galletas', numero: 11}, 
+             {nombre:  'Volt', numero: 7}
+              ]
+            },
+      { 
+          nombre: 'MENCIONA ALGO QUE ESTÁ EN EL EDIFICIO DE VINCULACIÓN', 
+          respuestas: [ 
+             { nombre: 'Auditorio', numero: 40}, 
+             {nombre: 'Centro de idiomas', numero: 26}, 
+             {nombre:  'Sillas', numero: 16}, 
+             {nombre:  'Cocina', numero: 10}, 
+             {nombre:  'Personas', numero: 6}
+              ]
+            },
+      { 
+          nombre: 'CON BASE EN LA VENTAS EN EL ITSUR, MENCIONA UN SABOR DE BOLI', 
+          respuestas: [ 
+             { nombre: 'Coco', numero: 22}, 
+             {nombre: 'Chocolate', numero: 18}, 
+             {nombre:  'Mango', numero: 14}, 
+             {nombre:  'Limón', numero: 12}, 
+             {nombre:  'Galleta/Oreo', numero: 10}
+              ]
+            },
+      ]                               
   },
-
-  /***** RONDA 2 *****/
-
   {
+    /***** RONDA 2 *****/
     preguntas: [
-      {
-        nombre: 'Menciona los elementos que integran el escudo nacional',
-        respuestas: [
-          {nombre: 'Águila', numero: 48},
-          {nombre: 'Serpiente', numero: 24},
-          {nombre: 'Nopal florecido', numero: 12},          
-          {nombre: 'Rama de laurel', numero: 9},
-          {nombre: 'Listón tricolor', numero: 7}       
-        ]
-      },
-      {
-        nombre: 'Problema que te puede pasar cuando estas en el baño',
-        respuestas: [
-          {nombre: 'Se acaba el papel', numero: 37},
-          {nombre: 'Estar estreñido', numero: 21},
-          {nombre: 'No hay agua', numero: 18},
-          {nombre: 'Esta tapado el escusado', numero: 14}          
-        ]
-      },
-      {
-        nombre: 'Menciona algo opuesto a la libertad',
-        respuestas: [
-          {nombre: 'Esclavitud', numero: 39},
-          {nombre: 'Encierro', numero: 25},
-          {nombre: 'Prisión', numero: 18},
-          {nombre: 'Opresión', numero: 10}
-        ]
-      }
-    ] 
-  },
-
-  /***** RONDA 3 *****/
-
-  {
-    preguntas: [
-      {
-        nombre: 'Cuando le pides un aumento a tu jefe, dinos una cosa que te aseguras de mencionar',
-        respuestas: [
-          {nombre: 'Hago bien mi trabajo', numero: 27},
-          {nombre: 'Costo de la vida', numero: 21},
-          {nombre: 'Me lo merezco', numero: 14},          
-          {nombre: 'Por favor', numero: 11},
-          {nombre: 'Ya tengo mucho tiempo trabajando', numero: 9}       
-        ]
-      },
-      {
-        nombre: 'Menciona el tipo de torta más común',
-        respuestas: [
-          {nombre: 'De jamón', numero: 34},
-          {nombre: 'Cubana', numero: 30},
-          {nombre: 'Cochinita', numero: 25},
-          {nombre: 'Ahogada', numero: 8}      
-        ]
-      },
-      {
-        nombre: 'Menciona el taco más pedido en una taquería o puesto callejero',
-        respuestas: [
-          {nombre: 'Asada', numero: 39},
-          {nombre: 'Al pastor', numero: 19},
-          {nombre: 'De tripa', numero: 13},
-          {nombre: 'Combinado', numero: 8}
-        ]
-      }
-    ] 
-  },
-
-  /***** RONDA 4 *****/
-
-  {
-    preguntas: [
-      {
-        nombre: 'Dinos que es lo primero que harías si te ganaras la lotería',
-        respuestas: [
-          {nombre: 'Pagar deudas', numero: 28},
-          {nombre: 'Viajar', numero: 23},
-          {nombre: 'Comprar una casa', numero: 17},          
-          {nombre: 'Hacer donaciones', numero: 12},
-          {nombre: 'Salirse de trabajar', numero: 10}       
-        ]
-      },
-      {
-        nombre: 'Bebida que toman las personas mientras trabajan',
-        respuestas: [
-          {nombre: 'Café', numero: 31},
-          {nombre: 'Agua', numero: 29},
-          {nombre: 'Té', numero: 19},
-          {nombre: 'Cola cola', numero: 17}      
-        ]
-      },
-      {
-        nombre: 'Menciona un medio de trasporte que se utiliza para llegar al trabajo',
-        respuestas: [
-          {nombre: 'Automóvil', numero: 33},
-          {nombre: 'Camión', numero: 27},
-          {nombre: 'Raite', numero: 14},
-          {nombre: 'Bicicleta', numero: 3}
-        ]
-      }
-    ] 
+      { 
+          nombre: 'NOMBRE DE UN PLATILLO MEXICANO', 
+          respuestas: [ 
+             { nombre: 'Pozole', numero: 38}, 
+             {nombre: 'Tacos', numero: 19}, 
+             {nombre:  'Mole', numero: 16}, 
+             {nombre:  'Enchiladas ', numero: 13}, 
+             {nombre:  'Tamales', numero: 8}
+              ]
+            },
+      { 
+          nombre: 'MENCIONA UN ALIMENTO QUE COMÚNMENTE DESAYUNA UN ESTUDIANTE.', 
+          respuestas: [ 
+             { nombre: 'Café', numero: 33}, 
+             {nombre: 'Torta', numero: 21}, 
+             {nombre:  'Sándwich', numero: 15}, 
+             {nombre:  'Galletas', numero: 11}, 
+             {nombre:  'Volt', numero: 7}
+              ]
+            },
+      { 
+          nombre: 'MENCIONA ALGO QUE ESTÁ EN EL EDIFICIO DE VINCULACIÓN', 
+          respuestas: [ 
+             { nombre: 'Auditorio', numero: 40}, 
+             {nombre: 'Centro de idiomas', numero: 26}, 
+             {nombre:  'Sillas', numero: 16}, 
+             {nombre:  'Cocina', numero: 10}, 
+             {nombre:  'Personas', numero: 6}
+              ]
+            },
+      { 
+          nombre: 'CON BASE EN LA VENTAS EN EL ITSUR, MENCIONA UN SABOR DE BOLI', 
+          respuestas: [ 
+             { nombre: 'Coco', numero: 22}, 
+             {nombre: 'Chocolate', numero: 18}, 
+             {nombre:  'Mango', numero: 14}, 
+             {nombre:  'Limón', numero: 12}, 
+             {nombre:  'Galleta/Oreo', numero: 10}
+              ]
+            },
+      ]                               
   }
-
 ];

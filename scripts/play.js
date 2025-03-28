@@ -16,13 +16,16 @@ app.controller('JuegoCtrl', ['$scope', '$timeout', '$rootScope',  function($scop
   $scope.turnoTeam = 0;
   $scope.puntosTeam1 = 0;
   $scope.puntosTeam2 = 0;
+  $scope.nombreTeam1 = equipos.equipo1;
+  $scope.nombreTeam2 = equipos.equipo2;
   $scope.puntosPregunta = 0;
   $scope.robo = false;
 
   var audioEntrada = new Audio('audios/entrada.mp3');
   var audioRespuestaCorrecta = new Audio('audios/correcto.mp3');
   var audioRespuestaIncorrecta = new Audio('audios/incorrecto.mp3');
-  var audioGana = new Audio('audios/gana.wav');
+  var audioGana = new Audio('audios/triunfo.mp3');
+  var audioRepetido = new Audio('audios/repetido.mp3');
 
   $scope.openRespuesta = function(index){
     var respuesta = $scope.preguntaActual.respuestas[index];
@@ -41,6 +44,10 @@ app.controller('JuegoCtrl', ['$scope', '$timeout', '$rootScope',  function($scop
         }
       }, 1000);    
     }
+  }
+
+  $scope.missing = function(){
+      audioRepetido.play(); 
   }
 
   $scope.strike = function(){
@@ -101,7 +108,8 @@ app.controller('JuegoCtrl', ['$scope', '$timeout', '$rootScope',  function($scop
   }
 
   var setPuntos = function(){       
-    $scope['puntosTeam' + $scope.turnoTeam] += ($scope.puntosPregunta) * ($scope.preguntaActualIndex + 1);
+    $scope['puntosTeam' + $scope.turnoTeam] += ($scope.puntosPregunta) * ($scope.preguntaActualIndex==0 ? 1 : $scope.preguntaActualIndex);
+    //$scope['puntosTeam' + $scope.turnoTeam] += ($scope.puntosPregunta);
   }
 
   var updatePuntosPregunta = function(puntos){
@@ -128,6 +136,13 @@ events = {
     var scope = angular.element(document.getElementById("container")).scope();
     scope.$apply(function () {
       scope.strike();
+    });
+  },
+
+  missing: function(){
+    var scope = angular.element(document.getElementById("container")).scope();
+    scope.$apply(function () {
+      scope.missing();
     });
   },
 

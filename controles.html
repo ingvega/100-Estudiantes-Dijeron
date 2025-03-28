@@ -2,48 +2,50 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>100 Novutekos dijeron</title>
+    <title>100 Estudiantes dijeron</title>
     <link rel="stylesheet" href="libs/animate.css" />
     <link rel="stylesheet" href="css/play.css">
   </head>
-  <body ng-app="juegoApp" ng-controller="ControlJuegoCtrl">
+  <body ng-app="juegoApp" ng-controller="ControlJuegoCtrl" style="background: white;">
 
     <div class="controles">
       
       <h2>Sonidos</h2>
 
-      <div><a href="#" class="control" ng-click="sendInicio()">Inicio juego</a></div>    
+      <div><a href="#" class="control inicio" ng-click="sendInicio()">Inicio juego</a></div>    
 
       <h2>Rondas</h2>
 
       <table>
         <tr>
           <td><a href="#" class="control" ng-click="sendPrevRonda()">Anterior</a></td>
-          <td><a href="#" class="control">{{ rondaActualIndex + 1 }}</a></td> 
+          <td><a href="#" class="control cont">{{ rondaActualIndex + 1 }}</a></td> 
           <td><a href="#" class="control" ng-click="sendNextRonda()">Siguiente</a></td>        
         </tr>
       </table>
       
       <hr>
 
-      <h1>Preguntas</h1>
+      <h2>Preguntas</h2>
 
       <table style="margin-bottom: 10px;">
         <tr>
           <td><a href="#" class="control" ng-click="sendPrevPregunta()">Anterior</a></td>
-          <td><a href="#" class="control">{{ preguntaActualIndex + 1 }}</a></td>
+          <td><a href="#" class="control cont">{{ preguntaActualIndex + 1 }}</a></td>
           <td><a href="#" class="control" ng-click="sendNextPregunta()">Siguiente</a></td>        
         </tr>
       </table>   
       
       <table style="margin-bottom: 10px;">
         <tr>
-          <td><a href="#" class="control" ng-click="sendTurnoTeam(1)">Turno equipo 1</a></td>
-          <td><a href="#" class="control" ng-click="sendTurnoTeam(2)">Turno equipo 2</a></td>        
+          <td><a href="#" class="control" ng-click="sendTurnoTeam(1)">Turno {{ nombreTeam1 }}</a></td>
+          <td><a href="#" class="control" ng-click="sendTurnoTeam(2)">Turno {{ nombreTeam2 }}</a></td>        
         </tr>
       </table>  
 
-      <div><a href="#" class="control" ng-click="sendStrike()" style="background">Strike</a></div> 
+      <div><a href="#" class="control btnStrike" ng-click="sendStrike()">Strike</a></div> 
+<br>
+      <div><a href="#" class="control btnStrike" ng-click="sendMissing()">Duplicado</a></div> 
       
       <h4>{{ preguntaActual.nombre }}</h4>
       

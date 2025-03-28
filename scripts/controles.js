@@ -5,9 +5,15 @@ app.controller('ControlJuegoCtrl', ['$scope', '$timeout', '$rootScope',  functio
   $scope.rondaActualIndex = 0;
   $scope.preguntaActualIndex = 0;
   $scope.preguntaActual = rondas[$scope.rondaActualIndex].preguntas[$scope.preguntaActualIndex];
+  $scope.nombreTeam1 = equipos.equipo1;
+  $scope.nombreTeam2 = equipos.equipo2;
 
   $scope.sendStrike = function(){
     window.opener.events.strike();
+  }
+
+  $scope.sendMissing = function(){
+    window.opener.events.missing();
   }
 
   $scope.sendOpenRespuesta = function(index){
